@@ -1,8 +1,8 @@
-import { handlers } from "./handlers";
-import { SettingsData, SettingsProvider, useSettings } from "./settings";
 import { render, screen } from "@testing-library/react";
-import { delay, http, HttpResponse } from "msw";
+import { http, HttpResponse, delay } from "msw";
 import { setupServer } from "msw/node";
+import { handlers } from "./handlers";
+import { type SettingsData, SettingsProvider, useSettings } from "./settings";
 
 const TESTID_SUCCESSFUL_FETCH = "TESTID_SUCCESSFUL_FETCH";
 const TESTID_PENDING_FETCH = "TESTID_PENDING_FETCH";
