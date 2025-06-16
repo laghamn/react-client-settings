@@ -1,6 +1,6 @@
+import { createContext, useContext } from "react";
 import SettingsClient from "./SettingsClient";
 import createSettingsProvider from "./createSettingsProvider";
-import { createContext, useContext } from "react";
 
 type SettingsContextConfig = {
   uri: string;
