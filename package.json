@@ -6,7 +6,9 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "files": ["/dist"],
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsup src/index.ts --tsconfig tsconfig.build.json --format cjs,esm --dts",
