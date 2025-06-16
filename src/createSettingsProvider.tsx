@@ -1,11 +1,11 @@
-import SettingsClient from "./SettingsClient";
-import React, {
-  Context,
-  PropsWithChildren,
-  ReactNode,
+import {
+  type Context,
+  type PropsWithChildren,
+  type ReactNode,
   useEffect,
   useState,
 } from "react";
+import type SettingsClient from "./SettingsClient";
 
 export default function createSettingsProvider<T>(
   SettingsContext: Context<T | undefined>,
@@ -30,7 +30,7 @@ export default function createSettingsProvider<T>(
         }
       };
       void fetchSettings();
-    }, []);
+    }, [settingsClient]);
 
     return (
       <SettingsContext.Provider value={settings.data}>
