@@ -9,7 +9,7 @@
   "files": ["/dist"],
   "scripts": {
     "clean": "rimraf dist",
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "tsup src/index.ts --tsconfig tsconfig.build.json --format cjs,esm --dts",
     "lint": "tsc",
     "release": "pnpm run build && changeset publish",
     "test": "vitest run"

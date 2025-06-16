@@ -16,8 +16,7 @@
     "sourceMap": true,
     "declaration": true,
     "lib": ["es2022", "dom", "dom.iterable"],
-    "moduleResolution": "Bundler",
-    "types": ["vitest/globals"]
+    "moduleResolution": "Bundler"
   },
-  "include": ["src", "test"]
+  "include": ["src"]
 }
