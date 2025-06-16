@@ -1,5 +1,12 @@
 # react-client-settings
 
+## 1.1.1
+
+### Patch Changes
+
+- 4aefacd: change repository location
+- d9980e4: update development dependencies
+
 ## 1.1.0
 
 ### Minor Changes
